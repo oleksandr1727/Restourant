@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Margin="10" Background="GreenYellow" FontSize="30" Click="Button_Click">Welcome WPF</Button>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+        <Label Content="Welcome to &quot;East Garage&quot; cafe" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center"
+               FontSize="20"/>
+
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            <TextBlock Text="Наша адреса: Вулиця Кулика і Гудачика 28" Margin="5"/>
+            <TextBlock Text="Номер телефону 1: 1-0984145258" Margin="5"/>
+            <TextBlock Text="Номер телефону 2: 0950704564" Margin="5"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Login" Width="100" Margin="10"/>
+            <Button Content="Sign Up" Width="100" Margin="10"/>
+        </StackPanel>
     </Grid>
 </Window>
