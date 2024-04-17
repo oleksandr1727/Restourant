@@ -30,15 +30,10 @@ namespace ClientApp
         {
             Login window = new Login();
             window.Show();
-            int a = 5;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MenuWindow newWindow = new MenuWindow();
-            MainWindow mainWindow= new MainWindow();
-
-            newWindow.Show();
             SignUp window = new SignUp();
             window.Show();
         }

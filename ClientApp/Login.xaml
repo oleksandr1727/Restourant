@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientApp"
         mc:Ignorable="d"
-        Title="SignUp" Height="180" Width="250" Background="Beige">
+        Title="SignUp" Height="200" Width="250" Background="Beige">
     <Window.Resources>
         <Style TargetType="{x:Type Label}">
             <Setter Property="FontSize" Value="16"/>
