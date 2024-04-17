@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClientApp.Menu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,6 +34,10 @@ namespace ClientApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            MenuWindow newWindow = new MenuWindow();
+            MainWindow mainWindow= new MainWindow();
+
+            newWindow.Show();
             SignUp window = new SignUp();
             window.Show();
         }
