@@ -26,12 +26,20 @@ namespace ClientApp
             InitializeComponent();
         }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Login window = new Login();
+            window.Show();
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MenuWindow newWindow = new MenuWindow();
             MainWindow mainWindow= new MainWindow();
 
             newWindow.Show();
+            SignUp window = new SignUp();
+            window.Show();
         }
     }
 }
