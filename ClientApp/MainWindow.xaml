@@ -5,57 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ClientApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="1000">
-    <Window.Background>
-        <ImageBrush ImageSource="/Photo/main1.jpg"/>
-    </Window.Background>
-    <Window.Resources>
-        <Style TargetType="{x:Type Label}">
-            <Setter Property="FontSize" Value="66"/>
-            <Setter Property="FontFamily" Value="Comic Sans MS"/>
-            <Setter Property="Foreground">
-                <Setter.Value>
-                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                        <GradientStop Color="Black"/>
-                        <GradientStop Color="#FFE29419" Offset="1"/>
-                    </LinearGradientBrush>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        <Style TargetType="{x:Type TextBlock}">
-            <Setter Property="FontSize" Value="26"/>
-            <Setter Property="FontFamily" Value="Comic Sans MS"/>
-            <Setter Property="Foreground" Value="#FF404A70"/>
-        </Style>
-        <Style TargetType="{x:Type Button}">
-            <Setter Property="Height" Value="40"/>
-            <Setter Property="FontSize" Value="20"/>
-            <Setter Property="FontStyle" Value="Italic"/>
-            <Setter Property="Margin" Value="5"/>
-            <Setter Property="Background" Value="#FFD1F3F3"/>
-        </Style>
-    </Window.Resources>
+        Background="#FFF5EA"
+        Title="MainWindow" Height="700" Width="1000">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
 
-        <Label Content="Welcome to &quot;East Garage&quot; cafe" HorizontalAlignment="Center"/>
 
+        <Label Grid.Column="1" Grid.Row="0" Content="Welcome" HorizontalAlignment="Center" FontSize="72"/>
+        <Label Grid.Column="1" Grid.Row="1" Content="East Garage" HorizontalAlignment="Center" FontSize="56"/>
 
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
-            <TextBlock Text="Наша адреса: Вулиця Кулика і Гудачика 28" Margin="5"/>
-            <TextBlock Text="Номер телефону 1: 1-0984145258" Margin="5"/>
-            <TextBlock Text="Номер телефону 2: 0950704564" Margin="5"/>
+        <Button  Grid.Column="0" Grid.Row="3" Style="{StaticResource MaterialDesignOutlinedButton}" ToolTip="MaterialDesignOutlinedButton" Background="{DynamicResource MaterialDesignTextFieldBoxBackground}" Margin="40,37,40,37" Click="Button_Click_2">LEARN MORE</Button>
+ 
+        <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Style="{StaticResource MaterialDesignFlatLightBgButton}" Content="LOGIN" Width="200" Margin="10" Click="Button_Click_1"/>
+            <Button Style="{StaticResource MaterialDesignFlatLightBgButton}" Content="SIGN UP" Width="200" Margin="10" Click="Button_Click"/>
         </StackPanel>
+        <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="180,171,0,0" Grid.Row="2" VerticalAlignment="Top" Click="Button_Click_3"/>
 
-
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Login" Width="200" Margin="10" Click="Button_Click_1"/>
-            <Button Content="Sign Up" Width="200" Margin="10" Click="Button_Click"/>
-        </StackPanel>
     </Grid>
 </Window>

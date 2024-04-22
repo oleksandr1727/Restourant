@@ -11,7 +11,10 @@
 
     <None Remove="main.jpg" />
     <None Remove="main2.jpg" />
+    <None Remove="Photo\hamburger.jpeg" />
+    <None Remove="Photo\hamburger.jpg" />
     <None Remove="Photo\main1.jpg" />
+    <None Remove="Photo\main4.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Photo\hamburger.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Photo\main.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
@@ -30,6 +36,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Photo\main2.jpg" />
+    <Resource Include="Photo\main4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
 
   </ItemGroup>
 
