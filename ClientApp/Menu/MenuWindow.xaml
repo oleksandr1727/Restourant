@@ -43,12 +43,15 @@
         </materialDesign:Card>
 
 
-        <materialDesign:RatingBar HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Center" Grid.ColumnSpan="4" Width="800" Height="62"/>
+        
         <materialDesign:Card Grid.Column="2" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="117" Width="180">
             <Button Content="Замовити" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Bottom" Width="160" Height="35"/>
 
         </materialDesign:Card>
-        <StackPanel Background="#785447" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4"/>
+        <StackPanel Orientation="Vertical" Background="#4c4c4c" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4">
+            <materialDesign:RatingBar HorizontalAlignment="Left" VerticalAlignment="Center" Width="800" Height="62"/>
+        </StackPanel>
+
     </Grid>
 
 </Window>
