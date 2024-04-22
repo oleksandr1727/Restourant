@@ -43,6 +43,10 @@
 
 
         <materialDesign:RatingBar HorizontalAlignment="Left" Margin="10,8,0,0" Grid.Row="2" VerticalAlignment="Top"/>
+        <materialDesign:Card Grid.Column="2" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="117" Width="180">
+            <Button Content="Замовити" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Bottom" Width="160" Height="35"/>
+
+        </materialDesign:Card>
     </Grid>
 
 </Window>
