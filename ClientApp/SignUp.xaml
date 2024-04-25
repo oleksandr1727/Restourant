@@ -37,20 +37,20 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Label>First name :</Label>
-        <TextBox Grid.Column="1"></TextBox>
+        <TextBox Name="FirstNameTextBox" Grid.Column="1"></TextBox>
             <Label Grid.Row="1">Last name :</Label>
-        <TextBox Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox Name="LastNameTextBox" Grid.Row="1" Grid.Column="1"></TextBox>
             <Label Grid.Row="2">Number :</Label>
-        <TextBox Grid.Row="2" Grid.Column="1"></TextBox>
+        <TextBox Name="PhoneNumberTextBox" Grid.Row="2" Grid.Column="1"></TextBox>
             <Label Grid.Row="3">Email :</Label>
-        <TextBox Grid.Row="3" Grid.Column="1"></TextBox>
+        <TextBox Name="EmailTextBox" Grid.Row="3" Grid.Column="1"></TextBox>
             <Label Grid.Row="4">Address :</Label>
-        <TextBox Grid.Row="4" Grid.Column="1"></TextBox>
+        <TextBox Name="AddressTextBox"  Grid.Row="4" Grid.Column="1"></TextBox>
             <Label Grid.Row="5">Login :</Label>
-        <TextBox Grid.Row="5" Grid.Column="1"></TextBox>
+        <TextBox Name="LoginTextBox" Grid.Row="5" Grid.Column="1"></TextBox>
             <Label Grid.Row="6">Password :</Label>
         <PasswordBox Margin="8" Grid.Row="6" Grid.Column="1" x:Name="passwordBox" Width="200" PasswordChar="*"/>
-        <Button Grid.Row="7">Create</Button>
+        <Button Click="Button_Click_1" Grid.Row="7">Create</Button>
         <Button Grid.Row="7" Grid.Column="1" Click="Button_Click">Cancel</Button>
         </Grid>
 </Window>

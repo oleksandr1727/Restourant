@@ -31,11 +31,11 @@
         </Grid.RowDefinitions>
 
         <Label Grid.Row="0" Content="Login:" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBox Grid.Row="1" HorizontalAlignment="Center" Margin="5" Width="150" />
+        <TextBox Name="LoginTextBox" Grid.Row="1" HorizontalAlignment="Center" Margin="5" Width="150" />
 
         <Label Grid.Row="2" Content="Password:" HorizontalAlignment="Center" VerticalAlignment="Center" />
-        <TextBox Grid.Row="3" HorizontalAlignment="Center" Margin="5" Width="150" />
+        <TextBox Name="PasswordTextBox"  Grid.Row="3" HorizontalAlignment="Center" Margin="5" Width="150" />
 
-        <Button Grid.Row="4" Content="Login" HorizontalAlignment="Center" Margin="5" Padding="5"/>
+        <Button Grid.Row="4" Content="Login" HorizontalAlignment="Center" Margin="5" Padding="5" Click="Button_Click" />
     </Grid>
 </Window>
