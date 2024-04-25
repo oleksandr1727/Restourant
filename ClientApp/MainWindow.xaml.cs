@@ -28,13 +28,13 @@ namespace ClientApp
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Login window = new Login();
+            Login window = new Login(this);
             window.Show();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SignUp window = new SignUp();
+            SignUp window = new SignUp(this);
             window.Show();
         }
     }
