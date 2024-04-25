@@ -1,4 +1,5 @@
-﻿using ClientApp.Menu;
+﻿using ClientApp.Info;
+using ClientApp.Menu;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +37,19 @@ namespace ClientApp
         {
             SignUp window = new SignUp(this);
             window.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+            infoWindow info = new infoWindow();
+            info.Show();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            MenuWindow menu = new MenuWindow();
+            menu.Show();
         }
     }
 }

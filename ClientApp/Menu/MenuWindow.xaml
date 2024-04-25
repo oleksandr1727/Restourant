@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:ClientApp.Menu"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" x:Class="ClientApp.Menu.MenuWindow"
         mc:Ignorable="d"
+        Background="#FFF5EA"
         Title="MenuWindow" Height="450" Width="800">
 
     <Grid>
@@ -21,8 +22,36 @@
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="3*" />
             <ColumnDefinition Width="3*" />
-        </Grid.ColumnDefinitions>       
-      
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" FontWeight="Bold" Grid.Column="1" Margin="0,20,0,23">Menu</TextBlock>
+        <ScrollBar Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" Height="310" Grid.Row="1"></ScrollBar>
+        <TreeView  Grid.Row="1" Grid.Column="0" MinWidth="100">
+            <TreeViewItem Header="Напої">
+                <TreeViewItem Header="Алкогольні" />
+                <TreeViewItem Header="Безакогольні" />
+            </TreeViewItem>
+            <TreeViewItem Header="Страви">
+                <TreeViewItem Header="Алкогольні" />
+                <TreeViewItem Header="Безакогольні" />
+            </TreeViewItem>
+        </TreeView>
+
+        <materialDesign:Card Grid.Column="1" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="117" Width="180">
+            <Button Content="Замовити" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Bottom" Width="160" Height="35"/>
+
+        </materialDesign:Card>
+
+
+        
+        <materialDesign:Card Grid.Column="2" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="117" Width="180">
+            <Button Content="Замовити" HorizontalAlignment="Center" Margin="0,0,0,10" VerticalAlignment="Bottom" Width="160" Height="35"/>
+
+        </materialDesign:Card>
+        <StackPanel Orientation="Vertical" Background="#4c4c4c" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="4">
+            <materialDesign:RatingBar HorizontalAlignment="Left" VerticalAlignment="Center" Width="800" Height="62"/>
+        </StackPanel>
+
     </Grid>
 
 </Window>
