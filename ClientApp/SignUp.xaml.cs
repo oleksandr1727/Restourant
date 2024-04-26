@@ -70,9 +70,6 @@ namespace ClientApp
             DatabaseHelper.AddClientToDatabase(newClient);
 
             MessageBox.Show("Реєстрація успішно завершена!", "Успіх");
-            TestWindow window = new TestWindow();
-            window.Show();
-            this.Close();
             MyProperty.Close();
         }
 

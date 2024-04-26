@@ -33,6 +33,8 @@ namespace ClientApp
         {
             string login = LoginTextBox.Text;
             string password = PasswordTextBox.Text;
+            int a = 5;
+            a = 6;
 
             // Перевірка, чи існує користувач з введеним логіном та паролем
             if (DatabaseHelper.CheckCredentials(login, password))
@@ -43,8 +45,6 @@ namespace ClientApp
             {
                 MessageBox.Show("Логін або пароль не вірні. Будь ласка, перевірте ваші дані та спробуйте знову.", "Помилка");
             }
-            TestWindow testWindow = new TestWindow();
-            testWindow.Show();
             this.Close();
             mainWindow.Close();
         }
