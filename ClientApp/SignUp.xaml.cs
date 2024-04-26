@@ -41,6 +41,8 @@ namespace ClientApp
             string address = AddressTextBox.Text;
             string login = LoginTextBox.Text;
             string password = passwordBox.Password;
+            int a = 5;
+            a = 6;
 
             // Перевірка унікальності логіну та номера телефону
             if (DatabaseHelper.CheckIfLoginExists(login))
