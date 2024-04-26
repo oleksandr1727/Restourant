@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-
+	  
     <None Remove="main.jpg" />
     <None Remove="main2.jpg" />
     <None Remove="Photo\hamburger.jpeg" />
